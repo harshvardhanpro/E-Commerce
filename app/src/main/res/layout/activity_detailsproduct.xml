@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+        </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nike"
+            android:id="@+id/textview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sneaker"
+            android:id="@+id/textview2"
+            android:layout_below="@+id/textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="₹ 3000"
+            android:id="@+id/textview3"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/textview2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/image_slider_view"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="65dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </android.support.v4.view.ViewPager>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="55dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/button_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:text="Add To Cart"
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:layout_weight="0.5"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_product_details"
+                android:padding="16dp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

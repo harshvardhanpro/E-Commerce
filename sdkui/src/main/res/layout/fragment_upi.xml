@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.payu.payuui.Fragment.UPIFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_upi_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cb_vpa_text_background"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="@dimen/padding_sixteen"
+            android:paddingLeft="@dimen/padding_twenty_one"
+            android:paddingRight="@dimen/padding_twenty"
+            android:paddingTop="@dimen/padding_sixteen"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_twelve" />
+
+        <EditText
+            android:id="@+id/et_virtual_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_twenty"
+            android:layout_marginRight="@dimen/padding_twenty"
+            android:background="@drawable/rect_shape_drop_down"
+            android:drawableRight="@drawable/grey_lock"
+            android:hint="@string/vpa_text"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/padding_twelve"
+            android:paddingLeft="@dimen/padding_nineteen"
+            android:paddingRight="@dimen/padding_twelve"
+            android:paddingTop="@dimen/padding_twelve"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_sixteen"/>
+
+        <TextView
+            android:id="@+id/text_enter_vpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/et_virtual_address"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:paddingBottom="@dimen/padding_ten"
+            android:paddingLeft="@dimen/padding_twenty"
+            android:text="@string/enter_vpa"
+            android:textColor="@color/cb_vpa_enter_vpa"
+            android:textSize="@dimen/text_size_twelve"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_learn_upi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_virtual_address"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/padding_twenty_five"
+            android:text="@string/learn_upi"
+            android:textColor="@color/cb_vpa_text_highlighter"
+            android:textSize="@dimen/text_size_fourteen"/>
+    </RelativeLayout>
+</FrameLayout>

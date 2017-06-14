@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PayUBaseActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/header_container"
+            android:gravity="center"
+            android:background="#E6E6E6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <TextView
+            android:id="@+id/textview_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#302F2F"
+            android:textSize="30sp"
+            android:text="Amount"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textview_txnid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#302F2F"
+            android:textSize="15sp"
+            android:text="Txnid"
+            android:layout_below="@id/textview_amount"
+            android:gravity="center"/>
+        </LinearLayout>
+
+
+        <com.payu.payuui.Widget.SwipeTab.SlidingTabLayout
+            android:layout_below="@id/header_container"
+           android:id="@+id/sliding_tab_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           />
+
+
+       <android.support.v4.view.ViewPager
+           android:layout_above="@+id/button_pay_now"
+           android:layout_below="@id/sliding_tab_layout"
+           android:id="@+id/pager"
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"
+
+           />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="PAY NOW"
+            android:id="@+id/button_pay_now"
+            android:enabled="false"
+            android:background="@drawable/bttn_grey_disabled"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

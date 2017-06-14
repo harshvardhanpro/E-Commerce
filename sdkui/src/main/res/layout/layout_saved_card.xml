@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+    android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/grey_round_rect"
+    android:orientation="vertical"
+        android:weightSum="7"
+    >
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            >
+
+            <ImageView
+                android:id="@+id/bank_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerInside"
+                android:foregroundGravity="left"
+                />
+
+            <ImageView
+                android:id="@+id/card_type_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="vertical">
+
+
+
+    <TextView
+    android:id="@+id/text_view_masked_card_number"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:textColor="@color/color_text_on_card"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:text="1234 23XX XXXX 1234"/>
+
+        <TextView
+            android:id="@+id/text_view_saved_card_bank_down_error"
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:textColor="@color/cb_errorRed"
+            android:textSize="10sp"
+            android:text="hellosdfsadfasdfasdfasdfasdfsfasdfasdf"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+        android:weightSum="1">
+
+    <TextView
+    android:id="@+id/cvv_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="CVV"
+    android:layout_marginRight="7dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:gravity="center"/>
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:maxLength="3"
+    android:layout_marginLeft="10dp"
+    android:inputType="numberPassword"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:textSize="20sp"
+    android:width="50dp"
+        android:id="@+id/edit_text_cvv"
+        android:layout_weight="0.04" />
+
+    </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_one_click_checkout"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/check_box_save_card_enable_one_click_payment"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+        android:id="@+id/text_view_card_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textColor="@color/color_text_on_card"
+        android:textSize="13sp"
+        android:text="My HDFC Master Card"
+        android:gravity="left"
+        android:layout_margin="3dp"/>
+
+        <TextView
+        android:id="@+id/text_view_card_mode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="3dp"
+        android:textColor="@color/color_text_on_card"
+        android:textSize="13sp"
+        android:text="CardType"
+        android:gravity="right"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

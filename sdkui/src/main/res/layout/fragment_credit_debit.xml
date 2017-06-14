@@ -1,0 +1,326 @@
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#FFFFFF"
+    tools:context="com.payu.payuui.Fragment.CreditDebitFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="5">
+
+
+
+        <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#9C9C9C"
+                android:textStyle="bold"
+                android:text="@string/enter_card_details"></TextView>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:text=""></TextView>
+
+
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_rect_shape"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edit_text_name_on_card"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:inputType="textPersonName"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:hint="@string/name_on_card"-->
+                    <!--android:background="#00000000"-->
+                    <!-->-->
+                <!--</EditText>-->
+
+
+
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#9C9C9C" />-->
+
+            <!--<ImageButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/image_cvv"-->
+                <!--android:id="@+id/my_test_button"-->
+                <!--/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1">
+
+
+                <EditText
+                    android:id="@+id/edit_text_card_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="19"
+                    android:inputType="number"
+                    android:background="#00000000"
+                    android:digits="01234 56789"
+                    android:layout_weight="5"
+                    android:textSize="15sp"
+                    android:hint="@string/card_number_format">
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/image_card_type"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_card"/>
+                    <!--android:scaleType="fitCenter"/>-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--/>-->
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9C9C9C" />
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_expiry_cvv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="5"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_expiry_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textColor="#302F2F"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/expires"></TextView>
+
+                <EditText
+                    android:id="@+id/edit_text_expiry_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:textSize="15sp"
+                    android:hint="@string/month_format"
+                    android:focusableInTouchMode="false"
+                    >
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/edit_text_expiry_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:textSize="15sp"
+                    android:hint="@string/year_format"
+                    android:focusableInTouchMode="false"
+                    >
+
+                </EditText>
+
+                    <!--<ImageButton-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/monthicon"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:id="@+id/my_test_button"-->
+                    <!--android:scaleType="centerInside"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--/>-->
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginRight="10dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#9C9C9C"
+                    />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/edit_text_card_cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="#00000000"
+                    android:layout_marginLeft="15dp"
+                    android:hint="@string/cvv" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/lock"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center|right"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/image_cvv" />
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9C9C9C" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_name_on_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:hint="@string/name_on_card"
+                    android:background="#00000000"
+                    >
+                </EditText>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_card_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card Label"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_card"
+                android:textColor="#9C9C9C"
+                android:id="@+id/check_box_save_card"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_one_click_checkout"
+                android:textColor="#9C9C9C"
+                android:id="@+id/check_box_enable_oneclick_payment"/>
+
+            <TextView
+                android:id="@+id/text_view_issuing_bank_down_error"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:textColor="@color/cb_errorRed"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+        </ScrollView>
+     </FrameLayout>

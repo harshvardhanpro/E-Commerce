@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#FFFFFF"
+    tools:context="com.payu.payuui.Fragment.SavedCardsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:layout_weight="5"-->
+                <!-->-->
+
+
+                <TextView android:layout_height="wrap_content"
+                    android:id="@+id/edit_text_title"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_enter_cvv"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:text="@string/text_enter_cvv"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    ></TextView>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_saved_card"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="200dp" />
+
+
+                <com.payu.payuui.Widget.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:padding="10dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+            <ImageButton
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:text="Delete"
+                android:layout_gravity="right"
+                android:background="#FFFFFF"
+                android:layout_marginRight="15dp"
+                />
+
+
+            <TextView
+                android:id="@+id/text_view_issuing_bank_down_error"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:textColor="@color/cb_errorRed"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

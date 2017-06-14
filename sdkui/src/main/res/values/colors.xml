@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="tabsScrollColor">#3488C4</color>
+    <color name="black">#000000</color>
+    <color name="color_paynow_button">#3488C4</color>
+    <color name="color_enter_cvv">#9C9C9C</color>
+    <color name="color_text_on_card">#404040</color>
+    <color name="color_amt_background">#E6E6E6</color>
+    <color name="cb_errorRed">#e40000</color>
+    <color name="cb_payu_blue">#368ecd</color>
+    <color name="cb_vpa_text_background">#f6fcce</color>
+    <color name="cb_vpa_text_border">#dcd36b</color>
+    <color name="cb_vpa_text_highlighter">#00adf2</color>
+    <color name="cb_vpa_enter_vpa">#9b9b9b</color>
+
+
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/product_info"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/shoe"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp">
+                />
+                <LinearLayout
+                    android:id="@+id/color_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+                    <TextView
+                        android:id="@+id/shoe_text_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="NIKE"
+                        android:textSize="25sp"
+                        android:gravity="bottom"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/shoe_text_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Sneaker"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:textColor="@android:color/white"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/price"
+                    android:text="₹ 3000"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_height="wrap_content"
+                    />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:padding="16dp"
+                    android:id="@+id/cart_delete"
+                    android:src="@drawable/ic_delete_white_24dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:id="@+id/view_cart"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cart_button"
+                android:id="@+id/cart"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <TextView
+                android:id="@+id/Text_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Shopping Cart is Empty !!"
+                android:textSize="20sp"
+                android:layout_marginTop="41dp"
+                android:layout_below="@+id/cart"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:text="Checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="55dp"
+                android:id="@+id/checkout_button"
+                android:visibility="gone"
+                android:background="@color/colorAccent"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_refresh_white_24dp"
+                android:layout_below="@+id/Text_cart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115dp"
+                android:id="@+id/cart_refresh" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

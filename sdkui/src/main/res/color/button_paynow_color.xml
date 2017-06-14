@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false" android:color="@color/color_amt_background"
+        android:drawable="@color/color_amt_background"/>
+    <item android:state_enabled="true" android:color="@color/color_paynow_button"
+        android:drawable="@color/color_paynow_button"/>
+</selector>

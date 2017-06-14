@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="#FFFFFF"
+    tools:context="com.payu.payuui.Fragment.NetBankingFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="5">
+
+
+            <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#9C9C9C"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="@string/choose_bank"></TextView>
+
+           <!-- <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text=""></TextView>
+-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_axis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_button_axis"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/logo_axis"
+                        />
+
+                    <TextView android:layout_height="wrap_content"
+                        android:id="@+id/text_view_axis"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/axis_bank"></TextView>
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_hdfc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_button_hdfc"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/logo_hdfc"
+                        />
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/text_view_hdfc"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/hdfc"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_citi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_button_citi"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/logo_citi"
+                        />
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/text_view_citi"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/citi"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sbi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_button_sbi"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/logo_sbi"
+                        />
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/sbi"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_icici"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_button_icici"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="#FFFFFF"
+                        android:src="@drawable/logo_icici"
+                        />
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/icici"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:text="@string/select_bank"></TextView>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spinner"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/bank_prompt"
+                android:spinnerMode="dialog"
+                android:background="@drawable/rect_shape_drop_down"
+                />
+
+            <TextView
+                android:id="@+id/text_view_bank_down_error"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:textColor="@color/cb_errorRed"
+                android:gravity="center"/>
+
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/redirection_text"></TextView>
+
+        </LinearLayout>
+
+
+
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

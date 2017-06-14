@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">SdkNewUI</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_next">Next</string>
+    <string name="ok">OK</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="test">Test</string>
+
+    <string name="name_on_card">Name On Card</string>
+    <string name="card_number_format">xxxx-xxxx-xxxx-xxxx</string>
+    <string name="cvv">CVV</string>
+    <string name="month_format">MM</string>
+    <string name="year_format">YYYY</string>
+    <string name="expires">Expires:</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="save_card">Save card for faster checkouts.</string>
+    <string name="enable_one_click_checkout">Enable one click checkout.</string>
+
+    <string name="choose_bank">Choose Your Bank</string>
+    <string name="select_bank">Select Other Banks</string>
+    <string name="bank_prompt">Select your Bank</string>
+    <string name="redirection_text">You will be redirected to your banks website to  complete payment</string>
+    <string name="axis_bank">AXIS</string>
+    <string name="hdfc">HDFC</string>
+    <string name="citi">CITI</string>
+    <string name="sbi">SBI</string>
+    <string name="icici">ICICI</string>
+
+    <string-array name="bank_names">
+        <item>State Bank Of India</item>
+        <item>HDFC</item>
+        <item>CITI</item>
+        <item>ICICI</item>
+        <item>Kotak Mahindra</item>
+        <item>Canara Bank</item>
+        <item>Axis Bank</item>
+        <item>State Bank of Hyderabad</item>
+        <item>State Bank Of Mysore</item>
+        <item>Central Bank of India</item>
+        <item>Yes Bank</item>
+        <item>Bank Of India</item>
+    </string-array>
+
+
+    <string name="text_enter_cvv">Please enter your CVV</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cardType_prompt">Select Card Type</string>
+    <string-array name="card_types">
+        <item>VISA</item>
+        <item>MASTER</item>
+        <item>MASTERO</item>
+
+    </string-array>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="vpa_text_more">VPA is your Virtual Payment Address in the format yourname@bankname.\n\n You can create your VPA from any UPI enabled Bank application or third party application. You need the Bank application installed in your phone to complete this transaction.</string>
+    <string name="vpa_text_less">VPA is your Virtual Payment Address in the format yourname@bankname.</string>
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
+
+    <string name="enter_vpa">Enter VPA</string>
+    <string name="vpa_text">yourname@bankname</string>
+    <string name="learn_upi">Learn how UPI works</string>
+
+   <!-- <string name="error_vpa_length">Please enter a valid VPA Maximum length allowed is 50 characters</string>-->
+    <string name="error_invalid_vpa">Invalid VPA</string>
+    <string name="error_fill_vpa">Please fill VPA</string>
+
+
+    <string name="close_image">Close helper</string>
+    <string name="helper_image">UPI Helper Image</string>
+
+    <string name="could_not_receive_data">Could not receive data</string>
+</resources>

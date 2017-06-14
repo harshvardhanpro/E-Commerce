@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="offer_modes">
+        <item>New card</item>
+        <item>Stored card</item>
+        <item>Net Banking</item>
+    </string-array>
+    <string-array name="check_offer_details_modes">
+        <item>Card number</item>
+        <item>User credential</item>
+        <item>User credential and Card token</item>
+        <item>PG as NB</item>
+        <item>PG as Bank code</item>
+    </string-array>
+</resources>
